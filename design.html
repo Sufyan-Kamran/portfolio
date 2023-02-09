@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vidaloka&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <style>.hero-design {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 50rem;
+        border-radius: 0% 100% 100% 0%;
+        background-color: #30005f;
+        /*background:url('https://i.pinimg.com/736x/02/68/d7/0268d7deb333107d0b6f9e5f724f5de8.jpg') ;*/
+        /*background: url('https://www.pngall.com/wp-content/uploads/9/Paint-Splash-PNG-High-Quality-Image.png');
+    background-repeat: no-repeat;*/
+        color: white;
+        padding: 5%;
+    }
+        .col-sm-6{ 
+            overflow: hidden;
+        }
+        
+        #hero-img {
+    /*top: 10%;*/
+    /*left: 30%;*/
+    margin-top: 2rem;
+    z-index: 0;
+    position: relative;
+    border-radius: none;
+    border: none;
+    animation: none;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    box-shadow: 0px 0px 0px #8000ff;
+    width: 55%;
+    -webkit-filter: drop-shadow(0px 0px 0px #121212);
+
+}
+
+            
+    </style>
+    <script>
+
+        $(document).ready(function(){
+            $("h1,p,h3").fadeOut();
+            $("h1,h3,p").fadeIn(3000);
+
+            $('#hero-h1').animate({
+                "top":"35%",
+                "opacity":"100%"
+            },1000);
+            $('#hero-p').animate({
+                "top":"45%",
+                "opacity":"100%"
+            },2000);
+            $('#hero-btn').animate({
+                "top":"55%",
+                "opacity":"100%"
+            },2200);
+            // Counter
+            
+            var a =0;
+            var b =0;
+            var c =0;
+            var d =0;
+            var e =0;
+            var f = 0;
+            // This block will be executed 100 times.
+            setInterval(function() {
+            if (a == 100) clearInterval(this);
+            else 
+            //var a = console.log('Currently at ' + (i++));}, 1000);
+            $('#html').text(a++ + "%");}, 100);
+            setInterval(function() {
+            if (b== 86) clearInterval(this);
+            else 
+            //var a = console.log('Currently at ' + (i++));}, 1000);
+            $('#css').text(b++  + "%");}, 100);
+            setInterval(function() {
+            if (c == 96) clearInterval(this);
+            else 
+            //var a = console.log('Currently at ' + (i++));}, 1000);
+            $('#python').text(c++  + "%");}, 100);
+            setInterval(function() {
+            if (d == 76) clearInterval(this);
+            else 
+            //var a = console.log('Currently at ' + (i++));}, 1000);
+            $('#js').text(d++  + "%");}, 100);
+            setInterval(function() {
+            if (e == 62) clearInterval(this);
+            else 
+            //var a = console.log('Currently at ' + (i++));}, 1000);
+            $('#jquery').text(e++  + "%");}, 100);
+            setInterval(function() {
+            if (f == 89) clearInterval(this);
+            else 
+            //var a = console.log('Currently at ' + (i++));}, 1000);
+            $('#django').text(f++  + "%");}, 100);
+            
+            // navbar
+
+            $('#navbar').mouseup(function(){
+                $("#hello").slideToggle();
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container-fluid p-0 m-auto mt-0 p-2" id="navbar" >
+        <ul class="text-center row" id="hello" style="justify-content: start;align-items: center;align-content: center;">
+            <li class="col-sm-4 mt-2 text-start"><a href="index.html">Sufyan K.Ahmed</a></li>
+            <li class="col-sm-1 mt-2"><a href="index.html">Home</a></li>
+            <li class="col-sm-1 mt-2"><a href="design.html">Designs</a></li>
+            <li class="col-sm-1 mt-2"><a href="about.html">About</a></li>
+        </ul>
+    </div>
+     <!--hero-->
+     <div class="container-fluid" style="background: linear-gradient(45deg, white 50%, #30005f 20% ); height: 500px; display: flex;    justify-content: center;">
+        <div class="row" style="justify-content: center; align-items: center; align-content: center; display: flex;" >
+            <div class="col-sm-12" >
+                <!--<h1 id="heroh1" style="font-size: 6rem; color: rgb(255, 255, 255);">Des<span style="color:#30005f;"  >igns</span></h1>-->
+                <h1 id="heroh1" style="font-size: 6rem;   background: -webkit-linear-gradient(45deg,#30005f 37%, #ffffff 30%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;">Design</h1>
+                <p id="herop1" > </p>
+                <div class="row" style="justify-content: center;">
+                    <div class="col-sm-3 mt-2 w-100"><a id="hero-btn" class="btn"  href="design.html" style="background: #30005f; box-shadow:3px 3px 10px #30005f;">Explore Designs</a></div>
+                    <div class="col-sm-2 mt-2 w-100"><a id="hero-btn2" class="btn" style="box-shadow:3px 3px 10px  #30005f;" href="about.html">Hire me</a></div>
+                </div>
+            </div>
+        </div>
+      </div>
+    <!--Design-->
+    <div class="container-fluid text-center bg-white mb-5 p-5">
+        <h1>Design</h1>
+        <p class="w-75 m-auto">A design is a plan or specification for the construction of an object or system or for the implementation of an activity or process or the result of that plan or specification in the form of a prototype, product, or process.</p>
+    </div>
+
+    <div class="container-flui">
+        <div class="row">
+            <div class="col-sm-6 p-0">
+                <img src="imgs/tesla.png" class="w-100 p-3" alt="">
+                <img src="imgs/apple.png" class="w-100 p-3" alt="">
+                <img src="imgs/flower.png" class="w-100 p-3" alt="">
+                <img src="imgs/amazon.png" class="w-100 p-3" alt="">
+                
+                
+                
+            </div>
+            <div class="col-sm-6 p-0">
+                <img src="imgs/spacex.png" class="w-100 p-3" alt="">
+                <img src="imgs/game.png" class="w-100 p-3 " alt="">
+                <img src="imgs/bitcoin.png" class="w-100 p-3" alt="">
+                
+                
+                
+            </div>
+        </div>
+    </div>
+
+    
+    <!--Footer-->
+    <div class="footer text-center">
+        <p>sufyankamran171@gmail.com | +923122431234 </p>
+    </div>
+</body>
+</html>
