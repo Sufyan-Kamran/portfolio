@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Saira+Condensed:wght@100&display=swap" rel="stylesheet">
+    <!--Icons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    
+    <style>
+        body{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            /*font-family: 'Bebas Neue', cursive;
+            font-family: 'Saira Condensed', sans-serif;*/
+        }
+        h1{
+            font-family: 'Bebas Neue', cursive;
+        }
+        h3{
+            font-family: 'Bebas Neue', cursive;
+        }
+        p{
+            font-family: 'Saira Condensed', sans-serif;
+            font-weight: 700;
+        }
+        .hero{
+            background: linear-gradient(90deg,#00000094,/*#3a9bdc*/#00000088),/*url('https://content.presspage.com/uploads/2199/1920_stock-photo-medicine-vaccination-and-healthcare-concept-doctor-wearing-face-protective-medical-mask-for-1817163167.jpg?10000')*//*url('https://img.freepik.com/free-vector/flat-hand-drawn-patient-taking-medical-examination-illustration_23-2148859982.jpg?w=2000')*/url('https://assets.healthpartners.com/is/image/healthpartners/brand-identity/photography/facility/hospital/regions/web/dji-0021-edit-2000x888.jpg?wid=2000');
+            background-repeat: no-repeat;
+            background-size: 100% 700px;
+            height: 700px;
+        }
+        ul{
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            font-size: 1rem;
+            align-items: center;
+            font-weight: 600;
+            color: white;
+        }
+        li{
+            list-style-type: none;
+            margin-left: 5%;
+        }
+        .heading{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            height: 556px;
+        }
+        .heading h1{
+            font-size: 5rem;
+            font-family: 'Bebas Neue', cursive;
+            color: white;
+            text-shadow: 3px 3px 3px #003848;
+            text-align: center;
+        }
+        .heading p{
+            color: white;
+            font-family: 'Saira Condensed', sans-serif;
+            font-weight: 500;
+        }
+        .heading button{
+            box-shadow: 3px 3px 9px #003848;
+            width: 100%;
+        }
+        .about h1{
+            font-family: 'Bebas Neue', cursive;
+        }
+        .about p{
+            font-family: 'Saira Condensed', sans-serif;
+            font-weight:500;
+        }
+        .about-img{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height:5%;
+            /*-webkit-filter: drop-shadow(4px 4px 4px rgb(177, 177, 177));*/
+        }
+        .boxes-row{
+            justify-content: center;
+        }
+        .boxes{
+            border-radius: 5%;
+            box-shadow: 0px 0px 15px gray;
+            overflow: hidden;
+        }
+
+    </style>
+</head>
+<body>
+    <!--hero-->
+    <div class="container-fluid hero">
+        <!--navbar-->
+        <ul>
+            <li class="btn btn-light mt-3">Home</li>
+            <li class="btn btn-outline-light mt-3">Services</li>
+            <li class="btn btn-outline-light mt-3">About</li>
+            <li class="btn btn-outline-light mt-3">Contact</li>
+        </ul>
+        <!--hero-->
+        <div class="container heading">
+            <img src="imgs/pngfind.com-hospital-png-2308054.png" class="thumbnail-image h-25" style="-webkit-filter: drop-shadow(4px 4px 4px #008cb3);" alt="">
+            <h1>Health Care Hopital</h1>
+            <p>Health care services, First aid for you. </p>
+            <div class="row mt-4" style="flex-direction: row;">
+                <div class="col">
+                    <button class="btn btn-outline-light">Appointment</button>
+                </div>
+                <div class="col">
+                    <button class="btn btn-light">Services</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--About-->
+    <div class="container mt-5 about">
+        <div class="row text-center" style="flex-direction: column;">
+            <div class="col about-img" >
+                <!--<img src="https://img.freepik.com/free-vector/flat-hand-drawn-patient-taking-medical-examination-illustration_23-2148859982.jpg?w=2000" class="w-50 mt-5" style="border-radius: 50%;"  alt="">-->
+                <img src="https://img.freepik.com/free-vector/patient-lying-bed-during-intensive-therapy_74855-7774.jpg?w=2000" class="w-50 mt-5 about-img" alt="">
+                <!--<img src="imgs/pngfind.com-hospital-png-2308054.png" alt="">-->
+            </div>
+            <div class="col">
+                <h1>About</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam dignissimos dicta doloribus veniam cumque nobis fugiat sint ipsa totam aspernatur asperiores beatae maiores ipsum expedita voluptatum quod velit sed porro autem ut, molestias iure vel. Exercitationem debitis similique tempora culpa aspernatur necessitatibus temporibus, enim eaque delectus, numquam eligendi minus tenetur iure possimus facere. Repellendus illo earum tempora reprehenderit eligendi aliquid, a labore voluptates unde maxime saepe neque pariatur, tenetur quasi assumenda? Saepe vitae magnam culpa natus. Amet libero aut laborum excepturi, nihil incidunt quia quae quasi rem quisquam natus ea necessitatibus non modi. Nisi sed, dicta incidunt numquam porro in quas, quod aliquid tenetur aperiam libero quaerat cum minima iusto natus odio deserunt quasi ad. Maiores deleniti quia dicta quis qui nesciunt blanditiis enim! Quae consequuntur sapiente fuga cupiditate, earum, distinctio qui eligendi pariatur, doloribus vel veritatis eaque. Repudiandae dolor reiciendis hic nam harum consectetur magnam sint consequatur eius quae, incidunt soluta fuga eaque officia voluptatum eos, ducimus ab magni quia totam quas consequuntur. Laudantium minus nulla, molestiae consequatur ipsam nobis reiciendis eaque odio esse eum, iure eligendi, eveniet rem!</p>
+            </div>
+            <div class="col"><button class="btn btn-info text-light">Explore more</button></div>
+        </div>
+    </div>
+    <hr>
+    <!--Services box-->
+
+    <div class="container-fluid" style="background:linear-gradient(#00000089,#00000089), url('https://www.hurleymc.com/images/banners/surgical-services.jpg'); background-repeat: no-repeat;background-size: cover;height: 500px; display: flex;align-items: center; justify-content: center; flex-direction: column;">
+        <h1 class="text-center mt-4 mb-0" style="font-size: 5rem; color: white; text-shadow:3px 3px 4px #29c5f6">Services</h1>
+        <p class="text-light text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto saepe quia ducimus laborum dolor ad neque debitis quaerat distinctio sapiente asperiores inventore, culpa sint suscipit. <br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo ab tempora temporibus necessitatibus tempore reiciendis.</p>
+        <button class="btn btn-info text-light more" >Explore</button>
+    </div>
+    <div class="container p-1">
+        <div class="row boxes-row p-5">
+            
+            <div class="col-sm-3 boxes text-center p-0 m-5">
+                <span class="material-symbols-outlined" style="font-size: 80px; color: #29c5F6;">stethoscope_check</span>
+                <h3>Check Up</h3>
+                <p class="p-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, pariatur.</p>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                    <path fill="#29c5F6" fill-opacity="1" d="M0,128L26.7,144C53.3,160,107,192,160,218.7C213.3,245,267,267,320,240C373.3,213,427,139,480,122.7C533.3,107,587,149,640,176C693.3,203,747,213,800,229.3C853.3,245,907,267,960,272C1013.3,277,1067,267,1120,245.3C1173.3,224,1227,192,1280,170.7C1333.3,149,1387,139,1413,133.3L1440,128L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"></path>
+                  </svg>
+                  
+                <div class="container-fluid" style="background-color: #29c5F6; height: 150px;">
+                    <button class="btn btn-outline-light mt-3 mb-4" style="font-size: 0.8rem; font-weight:600; width: 47%;">Explore More</button><br>
+                    <button class="btn btn-light mt-3 mb-4" style="font-size: 0.8rem; font-weight:600;">Make Appointment</button>
+                </div>
+
+                
+            </div>
+            <div class="col-sm-3 boxes text-center p-0 m-5">
+                <span class="material-symbols-outlined" style="font-size: 80px; color: #29c5F6;">health_and_safety</span>
+                <h3>Insurance Claim</h3>
+                <p class="p-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, pariatur.</p>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                    <path fill="#29c5F6" fill-opacity="1" d="M0,128L26.7,144C53.3,160,107,192,160,218.7C213.3,245,267,267,320,240C373.3,213,427,139,480,122.7C533.3,107,587,149,640,176C693.3,203,747,213,800,229.3C853.3,245,907,267,960,272C1013.3,277,1067,267,1120,245.3C1173.3,224,1227,192,1280,170.7C1333.3,149,1387,139,1413,133.3L1440,128L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"></path>
+                  </svg>
+                
+                  <div class="container-fluid" style="background-color: #29c5F6; height: 150px;">
+                    <button class="btn btn-outline-light mt-3 mb-4" style="font-size: 0.8rem; font-weight:600; width: 47%;">Explore More</button><br>
+                    <button class="btn btn-light mt-3 mb-4" style="font-size: 0.8rem; font-weight:600;">Make Appointment</button>
+                </div>
+            </div>
+            <div class="col-sm-3 boxes text-center p-0 m-5">
+                <span class="material-symbols-outlined" style="font-size: 80px; color: #29c5F6;">emergency</span>
+                <h3>Emergency</h3>
+                <p class="p-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, pariatur.</p>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                    <path fill="#29c5F6" fill-opacity="1" d="M0,128L26.7,144C53.3,160,107,192,160,218.7C213.3,245,267,267,320,240C373.3,213,427,139,480,122.7C533.3,107,587,149,640,176C693.3,203,747,213,800,229.3C853.3,245,907,267,960,272C1013.3,277,1067,267,1120,245.3C1173.3,224,1227,192,1280,170.7C1333.3,149,1387,139,1413,133.3L1440,128L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"></path>
+                  </svg>
+                
+                  <div class="container-fluid" style="background-color: #29c5F6; height: 150px;">
+                    <button class="btn btn-outline-light mt-3 mb-4" style="font-size: 0.8rem; font-weight:600; width: 47%;">Explore More</button><br>
+                    <button class="btn btn-light mt-3 mb-4" style="font-size: 0.8rem; font-weight:600;">Make Appointment</button>
+                </div>
+            </div>
+        </div>
+        <div class="row boxes-row p-5">
+            <div class="col-sm-3 boxes text-center p-0 m-5">
+                <span class="material-symbols-outlined" style="font-size: 80px; color: #29c5F6;">stethoscope_check</span>
+                <h3>Check Up</h3>
+                <p class="p-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, pariatur.</p>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                    <path fill="#29c5F6" fill-opacity="1" d="M0,128L26.7,144C53.3,160,107,192,160,218.7C213.3,245,267,267,320,240C373.3,213,427,139,480,122.7C533.3,107,587,149,640,176C693.3,203,747,213,800,229.3C853.3,245,907,267,960,272C1013.3,277,1067,267,1120,245.3C1173.3,224,1227,192,1280,170.7C1333.3,149,1387,139,1413,133.3L1440,128L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"></path>
+                  </svg>
+                  
+                <div class="container-fluid" style="background-color: #29c5F6; height: 150px;">
+                    <button class="btn btn-outline-light mt-3 mb-4" style="font-size: 0.8rem; font-weight:600; width: 47%;">Explore More</button><br>
+                    <button class="btn btn-light mt-3 mb-4" style="font-size: 0.8rem; font-weight:600;">Make Appointment</button>
+                </div>
+
+                
+            </div>
+            <div class="col-sm-3 boxes text-center p-0 m-5">
+                <span class="material-symbols-outlined" style="font-size: 80px; color: #29c5F6;">health_and_safety</span>
+                <h3>Insurance Claim</h3>
+                <p class="p-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, pariatur.</p>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                    <path fill="#29c5F6" fill-opacity="1" d="M0,128L26.7,144C53.3,160,107,192,160,218.7C213.3,245,267,267,320,240C373.3,213,427,139,480,122.7C533.3,107,587,149,640,176C693.3,203,747,213,800,229.3C853.3,245,907,267,960,272C1013.3,277,1067,267,1120,245.3C1173.3,224,1227,192,1280,170.7C1333.3,149,1387,139,1413,133.3L1440,128L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"></path>
+                  </svg>
+                
+                  <div class="container-fluid" style="background-color: #29c5F6; height: 150px;">
+                    <button class="btn btn-outline-light mt-3 mb-4" style="font-size: 0.8rem; font-weight:600; width: 47%;">Explore More</button><br>
+                    <button class="btn btn-light mt-3 mb-4" style="font-size: 0.8rem; font-weight:600;">Make Appointment</button>
+                </div>
+            </div>
+            <div class="col-sm-3 boxes text-center p-0 m-5">
+                <span class="material-symbols-outlined" style="font-size: 80px; color: #29c5F6;">emergency</span>
+                <h3>Emergency</h3>
+                <p class="p-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, pariatur.</p>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                    <path fill="#29c5F6" fill-opacity="1" d="M0,128L26.7,144C53.3,160,107,192,160,218.7C213.3,245,267,267,320,240C373.3,213,427,139,480,122.7C533.3,107,587,149,640,176C693.3,203,747,213,800,229.3C853.3,245,907,267,960,272C1013.3,277,1067,267,1120,245.3C1173.3,224,1227,192,1280,170.7C1333.3,149,1387,139,1413,133.3L1440,128L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"></path>
+                  </svg>
+                
+                  <div class="container-fluid" style="background-color: #29c5F6; height: 150px;">
+                    <button class="btn btn-outline-light mt-3 mb-4" style="font-size: 0.8rem; font-weight:600; width: 47%;">Explore More</button><br>
+                    <button class="btn btn-light mt-3 mb-4" style="font-size: 0.8rem; font-weight:600;">Make Appointment</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!--Banner-->
+    <h1 class="text-center">Awareness</h1>
+    <div class="container-fluid p-0 mt-5 mb-5" style="width: 100%; height:350px; background: linear-gradient(#29c6f671,#00232e6c),url('https://www.pcfa.org.au/media/789811/getchecked-infographic-3.jpg');">
+        <!--<img src="https://www.pcfa.org.au/media/789811/getchecked-infographic-3.jpg" style="width: 100%; height:350px; background: linear-gradient(#29c5F6,#29c5F6),url('https://www.pcfa.org.au/media/789811/getchecked-infographic-3.jpg');" alt="">-->
+    </div>
+    <hr>
+    <!--Emergency-->
+    <div class="container-fluid" style="background:linear-gradient(rgba(0, 0, 0, 0.524),rgba(0, 0, 0, 0.472)), url('https://www.balladhealth.org/sites/default/files/images/JMH-front-entrance-web-banner.jpg');height: 400px; background-repeat: no-repeat;background-size: 100%;    display: flex;align-items: center;justify-content: center; ">
+        <h1 class="text-center text-light" style="font-size: 5rem;text-shadow:4px 4px 4px #29c6F671">Emergency</h1>
+    </div>
+    <div class="container mt-5" >
+        <div class="row">
+            <div class="col-sm-6">
+                <h3>Emergency</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, harum praesentium unde error veritatis neque blanditiis assumenda pariatur adipisci animi nulla rerum ut! Nulla est error nobis sunt illum, magni, veniam repellat possimus atque optio ducimus unde eveniet laboriosam. Ipsam, maiores doloremque vitae veniam illo amet porro aperiam debitis placeat, consequatur, repellendus distinctio dolorum totam? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil maxime unde ducimus dolor vel, ea commodi tenetur atque itaque earum, sequi ipsa dicta nisi iure? Earum iure tenetur animi fugit minima veniam, architecto eos voluptas placeat autem accusantium neque deserunt ex suscipit obcaecati non distinctio qui, provident nesciunt. Perspiciatis excepturi velit nisi cum aspernatur iste. <br>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores quae accusamus commodi ipsam nostrum, architecto animi mollitia expedita earum facilis iste maiores, quis minima non, tenetur dolorem iusto voluptatem! Eveniet distinctio, asperiores natus omnis reiciendis numquam doloremque iusto nesciunt ut dolores labore quidem pariatur quia quisquam ab? Ea ullam suscipit dolorum laboriosam esse non odio.</p>
+            </div>
+            <div class="col">
+                <form action="">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <input type="text" placeholder="First Name" class="form-control">
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="text" placeholder="Last Name" class="form-control">
+                        </div>
+                        <div class="col-sm-12 mt-3">
+                            <input type="text" placeholder="xyz@mail.com" class="form-control">
+                        </div>
+                        <div class="col-sm-6 mt-3">
+                            <input type="text" placeholder="Patient age" class="form-control">
+                        </div>
+                        <div class="col-sm-6 mt-3">
+                            <input type="number" placeholder="Phone Number" class="form-control">
+                        </div>
+                        <div class="col-sm-12 mt-3">
+                            <input type="text" placeholder="Case Title " class="form-control">
+                        </div>
+                        <div class="col-sm-12 mt-3">
+                            <textarea class="form-control" cols="30" rows="5" placeholder="Describe Case (Optional)"></textarea>
+                        </div>
+                        <div class="col-sm-12 mt-3">
+                            <button class="col-sm-12 btn mt-3" style="background-color: #29c5F6;color: white;font-weight: 500;">Submit</button>
+                        </div>
+                        
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+    </div>
+    <hr>
+    <!--footer-->
+    <div class="container-fluid footer mt-5" style="background:#595959;color: white;">
+        <div class="row p-5">
+            <div class="col">
+                <h5>Policy</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, laboriosam est doloribus minima ad repellat cumque quia amet fugiat placeat asperiores et beatae laborum voluptatem velit suscipit harum molestiae magni unde natus accusamus. Ea, accusamus odit!</p>
+            </div>
+            <div class="col">
+                <h5>Brands</h5>
+                <p>XYZ <br> BHH <br>Lorem, ipsum. <br> Target </p>
+            </div>
+            <div class="col">
+                <h5>Delivery</h5>
+                <p>
+                    International Shippement <br> Domestic Shipment <br>
+                </p>
+            </div>
+            <div class="col"><h5>
+                Origin
+            </h5>
+            <p>USA <br>Canada <br>EU countries <br> UAE </p>
+        </div>
+        <div class="col">
+            <h5>
+                Payments methods
+            </h5>
+            <p>VISA card <br>Master Card <br> Credit card <br>PayPal <br> Payoneer</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

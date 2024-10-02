@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">
+    <!--ICONs-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://css.gg/home.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <title>Document</title>
+    <style>
+        body{
+            background:black;
+            color: white;
+        }
+        h1,h2,h3,h4,h5,h6{
+            font-family: 'Roboto', sans-serif;
+            font-weight: 900;
+        }
+        h1{
+            font-family: 'Roboto', sans-serif;
+            font-size: 5rem;
+            font-weight: 900;
+        }
+        p{
+            font-weight: 300;
+            font-family: 'Roboto', sans-serif;
+        }
+        ul{
+            display: flex;
+            width: 100%;
+            padding: 1%;
+            margin: auto;
+        }
+        ul li{
+            list-style: none;
+            padding-left: 150px;
+            font-weight:500;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .hero{
+            align-items: center;
+        }
+        .header-img img{
+            width: 80%;
+            /*-webkit-filter: drop-shadow(0px 40px 40px  rgb(172, 172, 172));*/
+            /*rotate: 30deg;*/
+        }
+        .section2{
+            height: 800px;
+            color: white;
+           /* background:linear-gradient(rgba(19, 19, 19, 0),rgba(0, 0, 0, 0.243)), url('https://www.apple.com/uk/apple-watch-series-8/images/meta/gps-lte__de35dernyje6_og.png');*/
+            /*background: url('https://cdn.vox-cdn.com/thumbor/gyzylXX0xT9cGLcy_Fod5hkFnZo=/0x0:2880x1800/1400x1050/filters:focal(1440x900:1441x901)/cdn.vox-cdn.com/uploads/chorus_asset/file/24003041/Screenshot_2022_09_07_at_12.17.46.png');*/
+            background-repeat: no-repeat;
+            background-size: auto 100%;
+            background-color: black;
+            align-items: center;
+            padding: 0px;
+        }
+        .section2 img{
+            width: 100%;
+            height: 100%;
+        }
+        .section2 button{
+            box-shadow: 0px 5px 10px rgba(237, 237, 237, 0.303);
+        }
+        .color-img img{
+            width: 100%;
+        }
+        .function img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid" style="height: 800px;">
+        <div class="row " >
+            <div class="col-sm-4">
+                <div class="row">
+                    <div class="col-1"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkrHI2MXoG4EXp75FE_z_9orME9kFBEGCVgbz0VJgaOw&s" class="p-2" width="40" alt=""></div>
+                    <div class="col mt-lg-3"><h6>Watch</h5></div>
+                </div>
+                
+                <!--<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/1667px-Apple_logo_black.svg.png" class="p-2" width="40" alt="">-->
+            </div>
+            <div class="col-sm-8">
+                <ul>
+                    <li class="p-2"><span class="material-symbols-outlined" style="font-size: 1.8rem; letter-spacing: 5rem;">home</span></li>
+                    <li class="p-2"><span class="material-symbols-outlined" style="font-size: 1.8rem; letter-spacing: 5rem;">contact_support</span></li>
+                    <li class="p-2"><span class="material-symbols-outlined" style="font-size: 1.8rem; letter-spacing: 5rem;">info</span></li>
+                    <li class="p-2"><span class="material-symbols-outlined" style="font-size: 1.8rem; letter-spacing: 5rem;">more_horiz</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row hero">
+            <div class="col-sm-6 p-5">
+                <!--style="text-shadow: 4px 4px 7px gray;"-->
+                <h1 >Apple Watch, <span style="color: white;"> Smart Store </span>.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti tempora exercitationem aspernatur, pariatur laboriosam quod.</p>
+                <button class="btn btn-outline-light">Shop Now</button>
+                <button class="btn btn-light">Explore</button>
+            </div>
+            <div class="col-sm-6 header-img">
+                <img src="https://images.squarespace-cdn.com/content/v1/59d2bea58a02c78793a95114/1600464559882-XA7438NX6R4HHLM44ZNF/Apple+Watch+Series+6?format=1000w" alt="">
+                <!--<img src="https://fastexpo.net/wp-content/uploads/2019/10/Apple-Watch-Apple-Watch-Iwatch-PNG-Image.png" alt="">-->
+            </div>
+        </div>
+    </div>
+    <!--<div class="container-fluid section2 " style="display:flex;flex-direction: column;align-items: flex-start;justify-content: center; background: url('https://about.att.com/ecms/dam/snr/2020/September2020/StoryLevelBanner/09162020_apple%20watch_STORY_LEVEL_BANNER_1600x483.jpg'); background-repeat: no-repeat; height: 500px;">-->
+        
+             
+        <!--<img src="https://oyster.ignimgs.com/wordpress/stg.ign.com/2020/09/Screen-Shot-2020-09-15-at-1.27.41-PM.jpg" alt="">-->
+        <!--<img src="https://i.ytimg.com/vi/Cy1adxM-CjM/maxresdefault.jpg" alt="">-->
+        <!-- <img src="https://cdn.vox-cdn.com/thumbor/gyzylXX0xT9cGLcy_Fod5hkFnZo=/0x0:2880x1800/1400x1050/filters:focal(1440x900:1441x901)/cdn.vox-cdn.com/uploads/chorus_asset/file/24003041/Screenshot_2022_09_07_at_12.17.46.png" alt="">-->
+        <!--<img src="data:image/png;base64,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" style="width: 10px;" alt="">-->
+        <!--<h1 style="width: 35%;" >New Apple series</h1>
+        <h3><b>$625</b></h3>
+        <button class="btn btn-light">Buy now</button>-->
+        <!--<img src="https://www.apple.com/newsroom/images/product/watch/standard/Apple-Watch-S8-2up-hero-220907_Full-Bleed-Image.jpg.large.jpg" alt="">-->
+    <!--</div>-->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-sm-6">
+                <h2>Variety of Colors</h2>
+                <p>Lorem ipsum dolor sit amet. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla provident doloremque eos similique, repellendus quaerat accusamus reiciendis aliquid, dolore ipsa error consequuntur sunt recusandae odit reprehenderit voluptas in sed corrupti ipsum explicabo a molestias! Ipsam illo labore sit excepturi sapiente nihil enim quae ad beatae nisi dolores repellat molestiae voluptatum iure consectetur fuga eaque omnis corporis consequuntur, maxime rem? Magnam, dolore temporibus ab necessitatibus a nesciunt tempora perspiciatis, totam ut modi excepturi qui voluptatum. Repudiandae aspernatur id odio, necessitatibus rerum magni voluptatem eum ab iste!</p>
+                <button class="btn btn-light">Shop Now</button>
+            </div>
+            <div class="col-sm-6 color-img">
+                <img src="https://cdn.arstechnica.net/wp-content/uploads/2022/09/apple-watch-colors.jpeg" alt="">
+            </div>
+        </div>
+    </div>
+    <!--<img src="https://i3-prod-assets.indiaistore.com/files/uploads/components/tab-blocks/watch-reasons-to-buy/banner_upload_mob_1617188960_594.png" style="width: 100%;" alt="">-->
+    <img src="https://mac24h.vn/images/companies/1/untitled%20folder%201/untitled%20folder/banner-watch-seri4.jpg?1537526795127" style="width:100%" alt="">
+    <div class="container mt-5">
+        <div class="row function">
+            <div class="col-sm-6">
+                <img src="https://www.apple.com/v/apple-watch-series-8/b/images/overview/connected/connected_hero__dujrpbr7lyc2_large.jpg" style="width: 40%;" alt="">
+            </div>
+            <div class="col-sm-6">
+                <h2>More Functions than previous</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid laborum distinctio omnis, quas expedita velit quisquam sed maxime reiciendis animi dignissimos saepe, rem at! Dicta, ducimus debitis voluptatem ullam distinctio nemo. Debitis dolore similique inventore delectus laborum ratione et provident qui asperiores aperiam? Omnis minima natus aliquid, minus recusandae soluta quisquam pariatur veritatis veniam nisi.</p>
+                <button class="btn btn-light">Shop Now</button>
+            </div>
+        </div>
+    </div>
+    <img src="https://t-mobile.scene7.com/is/image/Tmusprod/Apple-Watch-Series6-RP-M1-dsk?wid=1440&hei=636" style="width: 100%;" alt="">
+    <!--<img src="https://www.apple.com/newsroom/videos/black-n199-video/posters/Apple-Watch-Ultra-lifestyle-endurance-220907.jpg.large_2x.jpg" alt=""style="width: 100%; height: 700px;">-->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-sm-6">
+                <h2>Water Proof </h2>
+                <p>Lorem ipsum dolor sit amet. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla provident doloremque eos similique, repellendus quaerat accusamus reiciendis aliquid, dolore ipsa error consequuntur sunt recusandae odit reprehenderit voluptas in sed corrupti ipsum explicabo a molestias! Ipsam illo labore sit excepturi sapiente nihil enim quae ad beatae nisi dolores repellat molestiae voluptatum iure consectetur fuga eaque omnis corporis consequuntur, maxime rem? Magnam, dolore temporibus ab necessitatibus a nesciunt tempora perspiciatis, totam ut modi excepturi qui voluptatum. Repudiandae aspernatur id odio, necessitatibus rerum magni voluptatem eum ab iste!</p>
+                <button class="btn btn-light">Shop Now</button>
+            </div>
+            <div class="col-sm-6 color-img">
+                <img src="https://www.igeeksblog.com/wp-content/uploads/2022/09/Temperature-on-Apple-Watch-Ultra-800x409.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    <div class="container-fluid footer mt-5 p-0" style="background:#000000;color: white;">
+        <div class="row p-4">
+            <div class="col">
+                <h5>Policy</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, laboriosam est doloribus minima ad repellat cumque quia amet fugiat placeat asperiores et beatae laborum voluptatem velit suscipit harum molestiae magni unde natus accusamus. Ea, accusamus odit!</p>
+            </div>
+            <div class="col">
+                <h5>Brands</h5>
+                <p>XYZ <br> BHH <br>Lorem, ipsum. <br> Target </p>
+            </div>
+            <div class="col">
+                <h5>Delivery</h5>
+                <p>
+                    International Shippement <br> Domestic Shipment <br>
+                </p>
+            </div>
+            <div class="col"><h5>
+                Origin
+            </h5>
+            <p>USA <br>Canada <br>EU countries <br> UAE </p>
+        </div>
+        <div class="col">
+            <h5>
+                Payments methods
+            </h5>
+            <p>VISA card <br>Master Card <br> Credit card <br>PayPal <br> Payoneer</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300&family=Sofia+Sans:wght@100&display=swap" rel="stylesheet">
+    <!--ICONs-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Document</title>
+    <style>
+        /*
+            font-family: 'Rowdies', cursive;
+            font-family: 'Sofia Sans', sans-serif;
+        */
+        body{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+
+        }
+        h1,h3{
+            font-family: 'Rowdies', cursive;
+        }
+        p{
+            font-family: 'Sofia Sans', sans-serif;
+        }
+        .navbar{
+            background-color: rgb(255, 213, 220);
+            display: flex;
+            height: 50px;
+            width: 100%;
+        }
+        .navbar ul{
+            display: flex;
+            margin: auto;
+            width:30%;
+        }
+        .navbar ul li{
+            font-family: 'Rowdies', cursive;
+            color: white;
+            list-style-type: none;
+            margin-left: 15%;
+
+        }
+        .sub-navbar{
+            background: rgb(248, 248, 248);
+            border-bottom: 1px solid gray;
+            width: 100%;
+            height: 50px;
+            
+        }
+        .sub-navbar ul {
+            margin: auto;
+            display: flex;
+            margin: auto;
+            
+        }
+        .sub-navbar ul li{
+            color: black;
+            margin-top: 1%;
+            font-size: 0.9rem;
+            font-family: 'Rowdies', cursive;
+            list-style-type: none;
+            margin-left: 5%;
+            
+        }
+        .main{
+            margin-top: 5%;
+        }
+        .primary-image-div {
+            border-radius: 5%;
+            height: 500px;
+            width: 500px;
+            
+            
+        }
+        .primary-image-div img{
+            width: 500px;
+            height: 500px;
+            margin-left: 20%;
+            border-radius: 2%;
+            box-shadow: 0px 4px 10px gray;
+        }
+        .secondary-image-div{
+            display: flex;
+            flex-direction: row;
+            margin-left: 16%;
+            margin-top: 2%;
+        }
+        .secondary-image-div img{
+            border-radius: 2%;
+            width: 100px;
+            height: 100px;
+            margin-left: 9%;
+            flex-direction: row;
+        }
+        .shades{
+            background-color: red;
+            border-radius: 50%;
+            border: 2px solid rgba(88, 88, 88, 0.597);
+            height: 50px;
+            max-width: 50px;
+            margin-bottom: 4%;
+            margin-left: 1%;
+        }
+        .fa-star{
+            color: pink;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid navbar">
+        <ul>
+            <li>Home</li>
+            <li>Services</li>
+            <li>Contact</li>
+            <li>About</li>
+        </ul>
+    </div>
+    <div class="sub-navbar text-uppercase">
+        <ul>
+            <li>Skin Care</li>
+            <li>Eye care</li>
+            <li>Lip Care</li>
+            <li>Jewellery</li>
+            <li>lenses</li>
+            <li>Eye shadows</li>
+            <li>Foundation</li>
+            <li>Brands</li>
+            <li>Body Care</li>
+        </ul>
+    </div>
+    <div class="conatiner main">
+        <div class="row main-row">
+            <div class="col primary-image-div" >
+                <div class="row" >
+                    <!--<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo1PP33BaVAhMiIaO56xS0hfcifxdzbg0NHGoAeVymBm6NKC2ofup9MgmXXxF4csPH9sA&usqp=CAU" alt="">-->
+                    <img src="https://media1.popsugar-assets.com/files/thumbor/SOPl-V_izYEDloOMttWeillErCg/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2018/07/12/840/n/1922153/af16a999706f52ab_Herbivore_Rose_Quartz_Illuminating_Body_Oil/i/Herbivore-Rose-Quartz-Illuminating-Body-Oil.jpg" alt="">
+                    <div class="col-sm-6 secondary-image-div">
+                        <img src="https://www.newbeauty.com/wp-content/uploads/2020/02/861-herbivorepng.png" alt="">
+                        <img src="data:image/jpeg;base64,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" alt="">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb1CSnEMDpoUGbr_q9Rqektl808_Vvhiqnhmy5bbw2qQtFZNbY4EC5vnZjGC_f7jfOz7E&usqp=CAU" alt="">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn_VjBPjKY3ROZiquw8UNF0LpZRVExRLSfOUKuY34ZOAhb2f1zgFHZ2ECoFqUDCXRXYLc&usqp=CAU" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <h1>Desctiption</h1>
+                <p class="w-75">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores quaerat quidem odit maiores, cum culpa, modi ipsum in pariatur itaque iste perspiciatis consequatur accusantium voluptate?</p>
+                <p class="w-75">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores quaerat quidem odit maiores, cum culpa, modi ipsum in pariatur itaque iste perspiciatis consequatur accusantium voluptate? Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore harum eos, ipsam obcaecati doloremque, iusto amet facere nisi dolorem, voluptas nemo cupiditate nostrum ea voluptatum.s</p>
+                <p class="w-75">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores quaerat quidem odit maiores, cum culpa, modi ipsum in pariatur itaque iste perspiciatis consequatur accusantium voluptate? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, quibusdam! Officiis vitae tempora rerum eveniet, necessitatibus incidunt, officia quasi vero, eaque numquam cupiditate nemo aliquam. Veniam rerum animi eveniet in exercitationem alias sequi non, adipisci itaque beatae, obcaecati harum similique libero dolorem at cumque, mollitia vitae officia aut enim a error eum! Facilis expedita rem officiis commodi animi cum perspiciatis vel ullam molestias ratione magni quia dolore optio sequi, amet vitae consequuntur, quo quam explicabo consectetur quidem a excepturi beatae. Voluptatem, suscipit porro. Ipsam, molestias!</p>
+                <div class="row">
+                    <div class="col shades" style="background:linear-gradient(45deg,white,rgb(246, 187, 197));"></div>
+                    <div class="col shades" style="background:linear-gradient(45deg,white,rgb(250, 120, 141));"></div>
+                    <div class="col shades" style="background:linear-gradient(45deg,white,rgb(255, 52, 86));"></div>
+                    <div class="col shades" style="background:linear-gradient(45deg,white,rgb(253, 27, 65));"></div>
+                    <div class="col shades" style="background:linear-gradient(45deg,white,rgb(255, 0, 43));"></div>
+                </div>
+                <div class="row">
+                    <h4>Price : $89</h4>
+                    <div class="col-sm-1">
+                        <input type="number" class="form-control" style="width:50px;" value="0">
+                    </div>
+                    <div class="col-sm-9">
+                        <button class="btn btn-dark">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h3>Product Detail</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nulla iusto aperiam, asperiores officiis consequuntur? Odit eum dignissimos aperiam! Expedita reiciendis, tempora autem ab doloremque quod delectus repellat ducimus vero rerum sunt dolore assumenda hic amet soluta atque facilis asperiores architecto? Praesentium cum non et animi unde cumque libero asperiores debitis atque quaerat, eligendi earum. <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quaerat, in quo temporibus nesciunt accusantium nisi. Maxime nihil doloribus quo eius dolor magnam deleniti dicta illum odio nisi ratione tenetur voluptatem voluptatum non distinctio, sed facere natus fugit asperiores consequatur neque. Sapiente molestiae dolores hic modi aperiam non earum quidem reiciendis? Nemo sapiente aperiam, voluptas iste ipsum totam tempore blanditiis praesentium quasi iure consequatur ab laudantium cupiditate quia dolor excepturi ut ullam rem sit. Harum, eum dicta aliquam non ipsam, omnis quidem asperiores repellendus recusandae, itaque ducimus! Qui, repellat. <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta cupiditate accusantium facilis quibusdam error nisi veniam labore libero quas minus vitae facere quaerat et minima ratione distinctio id earum, incidunt ab vero voluptates praesentium sapiente! Obcaecati aut reprehenderit dolorem iure deserunt, consequuntur dignissimos eius hic architecto, minima, ea dolore corporis excepturi alias vel aliquid. Minus sequi qui cumque, odit deleniti nihil at ut dolores accusamus amet assumenda molestiae. Rerum amet dicta, vitae ullam accusantium a vero totam magni alias itaque ipsa aspernatur hic inventore necessitatibus consectetur, harum fugiat ut? <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ipsam distinctio rem minus culpa nihil dolor harum mollitia eius doloremque suscipit accusantium officiis natus, quibusdam dicta iusto, rerum architecto molestiae quidem saepe amet impedit. Officiis soluta facilis cupiditate distinctio. Tempore est aliquid accusamus nemo corrupti sit a veritatis consectetur culpa incidunt, eligendi odio qui repellendus ducimus harum reiciendis aperiam vitae suscipit nisi commodi! Corporis hic consequatur laudantium dolore officiis, quisquam excepturi unde dolor qui, dolorem repudiandae eveniet explicabo, sit quod cupiditate. Amet ipsa dicta velit commodi hic laudantium odio praesentium assumenda iure voluptatibus quidem nulla molestias quod ipsam veniam repudiandae est itaque magni distinctio, dignissimos expedita. Molestiae dolor aspernatur ab repudiandae animi alias odit, qui, nobis repellat iusto facilis. Ea natus, repellat atque hic doloribus reiciendis recusandae quidem nam. Velit repellat voluptas quis cumque accusamus ut alias quaerat quod. Officiis incidunt fugiat quos quae consectetur quasi veniam dignissimos quod nam!</p>
+        <div class="row">
+            <div class="col">
+                <h5>Dimenions</h5>
+                <p>1.5x8.5x1.5</p>
+                <h5>SKU</h5>
+                <p>08541215131</p>
+            </div>
+            <div class="col">
+                <h5>Weight</h5>
+                <p>15 Fl</p>
+                <h5>UPC</h5>
+                <p>548121812</p>
+            </div>
+        </div>
+    </div>
+    <div class="container review-section">
+        <h3>Reviews</h3>
+        <div class="row rounded mt-3" style="border: 1px solid rgb(211, 211, 211);box-shadow:4px 4px 4px rgb(213, 213, 213);">
+            <div class="col">
+                <h6>John S. Kevin</h6>
+                <p style="font-size: 0.8rem;">Top Reviwer</p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <p style="font-size:1rem; font-weight:900;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, voluptas. Reiciendis, provident.</p>
+            </div>
+        </div>
+        <div class="row rounded mt-3" style="border: 1px solid rgb(211, 211, 211);box-shadow:4px 4px 4px rgb(213, 213, 213);">
+            <div class="col">
+                <h6>John S. Kevin</h6>
+                <p style="font-size: 0.8rem;">Top Reviwer</p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <p style="font-size:1rem; font-weight:900;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, voluptas. Reiciendis, provident.</p>
+            </div>
+        </div>
+        <div class="row rounded mt-3" style="border: 1px solid rgb(211, 211, 211);box-shadow:4px 4px 4px rgb(213, 213, 213);">
+            <div class="col">
+                <h6>John S. Kevin</h6>
+                <p style="font-size: 0.8rem;">Top Reviwer</p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <p style="font-size:1rem; font-weight:900;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, voluptas. Reiciendis, provident.</p>
+            </div>
+        </div>
+        <div class="row rounded mt-3" style="border: 1px solid rgb(211, 211, 211);box-shadow:4px 4px 4px rgb(213, 213, 213);">
+            <div class="col">
+                <h6>John S. Kevin</h6>
+                <p style="font-size: 0.8rem;">Top Reviwer</p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <p style="font-size:1rem; font-weight:900;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, voluptas. Reiciendis, provident.</p>
+            </div>
+        </div>
+        <div class="row rounded mt-3" style="border: 1px solid rgb(211, 211, 211);box-shadow:4px 4px 4px rgb(213, 213, 213);">
+            <div class="col">
+                <h6>John S. Kevin</h6>
+                <p style="font-size: 0.8rem;">Top Reviwer</p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <p style="font-size:1rem; font-weight:900;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, voluptas. Reiciendis, provident.</p>
+            </div>
+        </div>
+        <div class="row rounded mt-3" style="border: 1px solid rgb(211, 211, 211);box-shadow:4px 4px 4px rgb(213, 213, 213);">
+            <div class="col">
+                <h6>John S. Kevin</h6>
+                <p style="font-size: 0.8rem;">Top Reviwer</p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <p style="font-size:1rem; font-weight:900;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, voluptas. Reiciendis, provident.</p>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    <div class="container-fluid footer mt-5" style="background:#000000;color: white;">
+        <div class="row p-5">
+            <div class="col">
+                <h5>Policy</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, laboriosam est doloribus minima ad repellat cumque quia amet fugiat placeat asperiores et beatae laborum voluptatem velit suscipit harum molestiae magni unde natus accusamus. Ea, accusamus odit!</p>
+            </div>
+            <div class="col">
+                <h5>Brands</h5>
+                <p>XYZ <br> BHH <br>Lorem, ipsum. <br> Target </p>
+            </div>
+            <div class="col">
+                <h5>Delivery</h5>
+                <p>
+                    International Shippement <br> Domestic Shipment <br>
+                </p>
+            </div>
+            <div class="col"><h5>
+                Origin
+            </h5>
+            <p>USA <br>Canada <br>EU countries <br> UAE </p>
+        </div>
+        <div class="col">
+            <h5>
+                Payments methods
+            </h5>
+            <p>VISA card <br>Master Card <br> Credit card <br>PayPal <br> Payoneer</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&family=Exo+2:wght@300;500&display=swap" rel="stylesheet">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        body{
+            
+            padding:0px ;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        h1,h2,h3,h4,h5,h6{
+            font-family: 'Exo 2', sans-serif;
+        }
+        p{
+            font-family: 'Cairo', sans-serif;
+        }
+        .logo img{
+            width: 80%;
+        }
+        ul{
+            display: flex;
+            width: 40%;
+            margin: auto;
+        }
+        ul li{
+            
+            list-style: none;
+            margin: 15px;
+        }
+        .hero-heading h1{
+            font-size: 6rem ;
+            font-weight: 900;
+            
+        }
+        .hero-img img{
+            width: 100%;
+        }
+        .box{
+            width: 30%;
+            margin: 1%;
+            height: 600px;
+            box-shadow: 4px 4px 25px #dbdbdb;
+            border-radius: 3%;
+        }
+        .box button{
+            box-shadow: 2px 2px 20px #dbdbdb;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-1 logo p-2">
+                <img src="data:image/png;base64,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" alt="">
+            </div>
+            <div class="col-sm-11">
+                <ul>
+                    <li><h6>Home</h6></li>
+                    <li><h6>Services</h6></li>
+                    <li><h6>About</h6></li>
+                    <li><h6>Contact</h6></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid hero">
+        <div class="row" style="align-items: center;">
+            <div class="col-6 hero-heading p-5">
+                <img src="data:image/png;base64,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" alt="">
+                <p class="p-3">To accelerate the advent of sustainable transport.</p>
+                <button class="btn btn-outline-dark">Book Tesla</button>
+                <button class="btn btn-dark">Explore</button>
+            </div>
+            <div class="col-6 hero-img mt-5">
+                <!--<img src="https://carsguide-res.cloudinary.com/image/upload/f_auto%2Cfl_lossy%2Cq_auto%2Ct_default/v1/editorial/2022-Tesla-Model-S-Plaid%2B-sedan-red-1001x-565-1_2.jpg" alt="">-->
+                <img src="https://assets.stickpng.com/images/580b585b2edbce24c47b2ccc.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid text-center" style="background:radial-gradient(rgba(0, 0, 0, 0.596),rgba(0, 0, 0, 0.693)), url('https://www.teslarati.com/wp-content/uploads/2019/08/tesla-gigafactory-4-europe.jpg');background-repeat: no-repeat; background-size: cover; height: 700px; display: flex; align-items: center; flex-direction: column; justify-content: center; color:white;" >
+        <!--<img src="https://www.teslarati.com/wp-content/uploads/2019/08/tesla-gigafactory-4-europe.jpg" style="opacity: 90%;" class="w-100" alt="">-->
+        <img src="https://mir-s3-cdn-cf.behance.net/projects/404/d0f50b137047265.Y3JvcCw5MjAsNzE5LDAsNDA.png" class="w-25 p-0" alt="">
+        <p class="w-75">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque aspernatur quasi dolorem debitis asperiores minima possimus odio quo! Assumenda, inventore voluptate tempore hic velit eum excepturi reprehenderit at ullam incidunt dolore dolor ipsam sint non laudantium sunt accusamus cupiditate explicabo quas ea nihil illum illo amet deserunt! A, tenetur numquam.</p>
+        <button class="btn btn-light">About More</button>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-6 p-5">
+                <img src="https://www.topgear.com/sites/default/files/2022/02/6-Tesla-Model-S.jpg" class="w-100" alt="">
+            </div>
+            <div class="col-sm-6 mt-0 p-5">
+                <h1 style="font-weight: 900;">Another level of comfort</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui temporibus explicabo laudantium expedita quod sed vitae, magnam aperiam alias! At debitis quos est sint repudiandae minima eaque commodi asperiores aliquid dignissimos <br> similique omnis saepe exercitationem ea numquam, natus mollitia ipsa reiciendis illo veritatis! Debitis assumenda dignissimos eveniet minima commodi amet consectetur neque incidunt natus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, eum delectus. Ea saepe asperiores sunt blanditiis dolorem sequi ullam obcaecati dicta aliquam debitis incidunt, aperiam architecto cupiditate fugit. Alias nostrum obcaecati nihil earum voluptatibus voluptatum repudiandae fuga odio officiis, repellat, eos exercitationem voluptate, fugit eligendi tenetur itaque ipsa soluta. Ab harum expedita quis ex perspiciatis reprehenderit repudiandae. Sit, magni voluptatum cum error deleniti assumenda modi soluta similique nesciunt commodi molestiae eaque distinctio cupiditate dolores tempora. Quo ab eligendi, ex iste accusantium asperiores quis animi optio. Quod distinctio possimus voluptatum?</p>
+                <button class="btn btn-dark">Learn More</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 mt-0 p-5">
+                <h1 style="font-weight: 900;">Check me if you can.</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui temporibus explicabo laudantium expedita quod sed vitae, magnam aperiam alias! At debitis quos est sint repudiandae minima eaque commodi asperiores aliquid dignissimos <br> similique omnis saepe exercitationem ea numquam, natus mollitia ipsa reiciendis illo veritatis! Debitis assumenda dignissimos eveniet minima commodi amet consectetur neque incidunt natus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, eum delectus. Ea saepe asperiores sunt blanditiis dolorem sequi ullam obcaecati dicta aliquam debitis incidunt, aperiam architecto cupiditate fugit. Alias nostrum obcaecati nihil earum voluptatibus voluptatum repudiandae fuga odio officiis, repellat, eos exercitationem voluptate, fugit eligendi tenetur itaque ipsa soluta. Ab harum expedita quis ex perspiciatis reprehenderit repudiandae. Sit, magni voluptatum cum error deleniti assumenda modi soluta similique nesciunt commodi molestiae eaque distinctio cupiditate dolores tempora. Quo ab eligendi, ex iste accusantium asperiores quis animi optio. Quod distinctio possimus voluptatum?</p>
+                <button class="btn btn-dark">Learn More</button>
+            </div>
+            <div class="col-sm-6 p-5">
+                <img src="https://tesla-cdn.thron.com/delivery/public/image/tesla/37612e96-a8a7-46ea-9847-4fff683483b0/bvlatuR/std/2880x1800/Model-X-Main-Hero-Desktop-LHD?quality=auto-medium&amp;format=auto" class="w-100" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 p-5">
+                <img src="https://cdn.motor1.com/images/mgl/WOLnq/s1/tesla-model-3-interior.webp" class="w-100" alt="">
+            </div>
+            <div class="col-sm-6 mt-0 p-5">
+                <h1 style="font-weight: 900;">Long lasting battery.</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui temporibus explicabo laudantium expedita quod sed vitae, magnam aperiam alias! At debitis quos est sint repudiandae minima eaque commodi asperiores aliquid dignissimos <br> similique omnis saepe exercitationem ea numquam, natus mollitia ipsa reiciendis illo veritatis! Debitis assumenda dignissimos eveniet minima commodi amet consectetur neque incidunt natus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, eum delectus. Ea saepe asperiores sunt blanditiis dolorem sequi ullam obcaecati dicta aliquam debitis incidunt, aperiam architecto cupiditate fugit. Alias nostrum obcaecati nihil earum voluptatibus voluptatum repudiandae fuga odio officiis, repellat, eos exercitationem voluptate, fugit eligendi tenetur itaque ipsa soluta. Ab harum expedita quis ex perspiciatis reprehenderit repudiandae. Sit, magni voluptatum cum error deleniti assumenda modi soluta similique nesciunt commodi molestiae eaque distinctio cupiditate dolores tempora. Quo ab eligendi, ex iste accusantium asperiores quis animi optio. Quod distinctio possimus voluptatum?</p>
+                <button class="btn btn-dark">Learn More</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 mt-0 p-5">
+                <h1 style="font-weight: 900;">Save money & Drvice Eco-friendly.</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui temporibus explicabo laudantium expedita quod sed vitae, magnam aperiam alias! At debitis quos est sint repudiandae minima eaque commodi asperiores aliquid dignissimos <br> similique omnis saepe exercitationem ea numquam, natus mollitia ipsa reiciendis illo veritatis! Debitis assumenda dignissimos eveniet minima commodi amet consectetur neque incidunt natus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, eum delectus. Ea saepe asperiores sunt blanditiis dolorem sequi ullam obcaecati dicta aliquam debitis incidunt, aperiam architecto cupiditate fugit. Alias nostrum obcaecati nihil earum voluptatibus voluptatum repudiandae fuga odio officiis, repellat, eos exercitationem voluptate, fugit eligendi tenetur itaque ipsa soluta. Ab harum expedita quis ex perspiciatis reprehenderit repudiandae. Sit, magni voluptatum cum error deleniti assumenda modi soluta similique nesciunt commodi molestiae eaque distinctio cupiditate dolores tempora. Quo ab eligendi, ex iste accusantium asperiores quis animi optio. Quod distinctio possimus voluptatum?</p>
+                <button class="btn btn-dark">Learn More</button>
+            </div>
+            <div class="col-sm-6 p-5">
+                <img src="https://tesla-cdn.thron.com/delivery/public/image/tesla/1035e344-82ec-4b61-8988-3dd8464beaa9/bvlatuR/std/0x0/1035e344-82ec-4b61-8988-3dd8464beaa9" class="w-100" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container text-center">
+        <img src="https://www.freepnglogos.com/uploads/tesla-logo-png-20.png" class="w-25 mt-5 mb-3" alt="">
+        <h3 class="mb-5" style="font-weight: 500;">Cars</h3>
+        <div class="row">
+            <div class="col-sm-3 text-center box ">
+                <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/tesla-model-x-1636042860.jpg?crop=0.809xw:0.718xh;0.0913xw,0.120xh&resize=1200:*" class="w-100 h-50" alt="">
+                <h3>Model X</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet cupiditate eveniet molestias quas perspiciatis dolorem assumenda, accusamus facilis, placeat ex libero dicta impedit vero molestiae, labore voluptatem recusandae quia expedita quidem nesciunt eius eum. Optio distinctio, quasi nesciunt magni error in aliquid alias officiis. Quis!</p>
+                <button class="btn btn-dark">Book Now</button>
+            </div>
+            <div class="col-sm-3 text-center box">
+                <img src="https://assets.stickpng.com/images/580b585b2edbce24c47b2ccc.png" class="w-100 h-50" alt="">
+                <h3>Model S</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet cupiditate eveniet molestias quas perspiciatis dolorem assumenda, accusamus facilis, placeat ex libero dicta impedit vero molestiae, labore voluptatem recusandae quia expedita quidem nesciunt eius eum. Optio distinctio, quasi nesciunt magni error in aliquid alias officiis. Quis!</p>
+                <button class="btn btn-dark">Book Now</button>
+            </div>
+            <div class="col-sm-3 text-center box">
+                <img src="https://cars.usnews.com/static/images/Auto/izmo/i159614878/2022_tesla_model_y_angularfront.jpg" class="w-75 h-50" alt="">
+                <h3>Model Y</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet cupiditate eveniet molestias quas perspiciatis dolorem assumenda, accusamus facilis, placeat ex libero dicta impedit vero molestiae, labore voluptatem recusandae quia expedita quidem nesciunt eius eum. Optio distinctio, quasi nesciunt magni error in aliquid alias officiis. Quis!</p>
+                <button class="btn btn-dark">Book Now</button>
+            </div>
+            <div class="col-sm-3 text-center box">
+                <img src="https://assets.stickpng.com/thumbs/61fc15f880bcb6000427cd01.png" class="w-75 h-50"  alt="">
+                <h3>Model 3</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet cupiditate eveniet molestias quas perspiciatis dolorem assumenda, accusamus facilis, placeat ex libero dicta impedit vero molestiae, labore voluptatem recusandae quia expedita quidem nesciunt eius eum. Optio distinctio, quasi nesciunt magni error in aliquid alias officiis. Quis!</p>
+                <button class="btn btn-dark">Book Now</button>
+            </div>
+            <div class="col-sm-3 text-center box">
+                <img src="https://netrinoimages.s3.eu-west-2.amazonaws.com/2015/03/05/385852/265724/tesla_cybertruck_3d_model_c4d_max_obj_fbx_ma_lwo_3ds_3dm_stl_2812776_o.png" class="w-75 h-50"  alt="">
+                <h3>Model 3</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet cupiditate eveniet molestias quas perspiciatis dolorem assumenda, accusamus facilis, placeat ex libero dicta impedit vero molestiae, labore voluptatem recusandae quia expedita quidem nesciunt eius eum. Optio distinctio, quasi nesciunt magni error in aliquid alias officiis. Quis!</p>
+                <button class="btn btn-dark">Book Now</button>
+            
+        </div>
+    </div>
+    <div class="container text-center">
+        <img src="https://www.freepnglogos.com/uploads/tesla-logo-png-20.png" class="w-25 mt-5 mb-3" alt="">
+        <h3 class="mb-5" style="font-weight: 500;">More Services</h3>
+        <div class="row">
+            <div class="col text-center">
+                <img src="https://cdn.vox-cdn.com/thumbor/cVIXF1Ii3Lp43QfaQZvsXyxdk_A=/0x0:1500x1000/1400x1050/filters:focal(750x500:751x501)/cdn.vox-cdn.com/uploads/chorus_asset/file/6437635/akrales_160419_1019_A_0257.0.png" class="w-100 h-50" alt="">
+                <h3>Charging Stations</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet cupiditate eveniet molestias quas perspiciatis dolorem assumenda, accusamus facilis, placeat ex libero dicta impedit vero molestiae, labore voluptatem recusandae quia expedita quidem nesciunt eius eum. Optio distinctio, quasi nesciunt magni error in aliquid alias officiis. Quis!</p>
+                <button class="btn btn-dark">Learn More</button>
+            </div>
+            <div class="col text-center">
+                <img src="https://www.rpc.com.au/shop/images/ip004504.jpg" class="w-100 h-50" alt="">
+                <h3>Tesla Power Wall</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet cupiditate eveniet molestias quas perspiciatis dolorem assumenda, accusamus facilis, placeat ex libero dicta impedit vero molestiae, labore voluptatem recusandae quia expedita quidem nesciunt eius eum. Optio distinctio, quasi nesciunt magni error in aliquid alias officiis. Quis!</p>
+                <button class="btn btn-dark">Learn More</button>
+            </div>
+            <div class="col text-center">
+                <img src="https://cdn.motor1.com/images/mgl/x7rZp/s3/tesla-megapack-energy-storage-system.jpg" class="w-100 h-50" alt="">
+                <h3>Tesla Energy</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet cupiditate eveniet molestias quas perspiciatis dolorem assumenda, accusamus facilis, placeat ex libero dicta impedit vero molestiae, labore voluptatem recusandae quia expedita quidem nesciunt eius eum. Optio distinctio, quasi nesciunt magni error in aliquid alias officiis. Quis!</p>
+                <button class="btn btn-dark">Learn More</button>
+            </div>
+            
+        </div>
+    </div>
+    </div>
+    
+    <!--footer-->
+    <div class="container-fluid footer mt-5" style="background:#000000;color: white;">
+        
+        <div class="row p-5">
+            <div class="col">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Tesla_logo.png" style="width: 100px;" alt="">
+            </div>
+            <div class="col">
+                <h5>Policy</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, laboriosam est doloribus minima ad repellat cumque quia amet fugiat placeat asperiores et beatae laborum voluptatem velit suscipit harum molestiae magni unde natus accusamus. Ea, accusamus odit!</p>
+            </div>
+            <div class="col">
+                <h5>Brands</h5>
+                <p>XYZ <br> BHH <br>Lorem, ipsum. <br> Target </p>
+            </div>
+            <div class="col">
+                <h5>Delivery</h5>
+                <p>
+                    International Shippement <br> Domestic Shipment <br>
+                </p>
+            </div>
+            <div class="col"><h5>
+                Origin
+            </h5>
+            <p>USA <br>Canada <br>EU countries <br> UAE </p>
+        </div>
+        <div class="col">
+            <h5>
+                Payments methods
+            </h5>
+            <p>VISA card <br>Master Card <br> Credit card <br>PayPal <br> Payoneer</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

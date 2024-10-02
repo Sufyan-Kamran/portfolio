@@ -1,0 +1,283 @@
+
+
+body {
+    font-family: 'Kanit', sans-serif;
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    background: #c9c9c9b1;
+    padding: 0px;
+    background: url('https://www.toptal.com/designers/subtlepatterns/uploads/grey.png');
+    
+
+}
+.hero {
+    padding: 0%;
+    /*background:radial-gradient(rgba(0, 0, 0, 0.713),rgba(0, 0, 0, 0.85));*/
+    /* background-color: rgb(226, 226, 226);*/
+    /*background: url('https://www.toptal.com/designers/subtlepatterns/uploads/grey.png');*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    font-family: 'Vidaloka', serif;
+    overflow: hidden;
+    position: relative;
+
+}
+.nav {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+
+    z-index: 1;
+}
+.nav span {
+    z-index: 1;
+    position: absolute;
+    top: 30%;
+    left: 46%;
+    color: #30005f;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-family: 'Kanit', sans-serif;
+
+}
+.hero h1 {
+    color: rgb(15, 15, 15);
+    font-size: 4rem;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 700;
+    width: 50%;
+    text-align: center;
+    position: absolute;
+    top: 105%;
+    /*left: 25%;*/
+    left: -7%;
+    color:
+        /*#8428e0d5*/
+        white;
+    opacity: 0%;
+    z-index: 1;
+}
+.hero p {
+    opacity: 0%;
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 200;
+    width: 50%;
+    text-align: start;
+    position: absolute;
+    top: 105%;
+    /*left: 25%;*/
+    left: 2%;
+    z-index: 1;
+}
+#heroh1 {
+    font-size: 4rem;
+    font-weight: 700;
+}
+#herop1,
+#herop2 {
+    font-size: 1.2rem;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 400;
+}
+#hero-btn {
+    opacity: 100%;
+    width: 100%;
+    background:
+        /*linear-gradient(#8000ff,#8000ff);*/
+        /*#8000ff*/
+        transparent;
+    color: white;
+    border: 2px solid white;
+    font-weight: 600;
+    z-index: 1;
+
+}
+#hero-btn2 {
+    opacity: 100%;
+    width: 100%;
+    background:white;
+    color: #30005f;
+    font-weight: 600;
+    z-index: 1;
+}
+#hero-btn:hover{
+    background-color: white;
+    color:#30005f;
+}
+#hero-btn2:hover{
+    
+    background-color: #dddddd;
+    color:#30005f;
+}
+.hero-d1 {
+    height: 900px;
+    width: 850px;
+    background: #30005f;
+    opacity: 105%;
+    border-radius: 50% 50% 50% 0%;
+    position: absolute;
+    top: -8%;
+    z-index: 0;
+    left: -15%;
+
+}
+.hero-design {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 50rem;
+    border-radius: 0% 100% 100% 0%;
+    background-color: #30005f;
+    color: white;
+    padding: 5%;
+}
+.hero-img-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+#hero-img {
+    /*top: 10%;*/
+    /*left: 30%;*/
+    margin-top: 2rem;
+    z-index: 0;
+    position: relative;
+    border-radius: 40%;
+    border: 5px solid #30005f;
+    animation: imgs;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    box-shadow: 0px 0px 70px #8000ff;
+    width: 55%;
+    -webkit-filter: drop-shadow(0px 0px 10px #121212);
+
+}
+.fa {
+    padding: 15px;
+    font-size: 25px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: #30005f;
+    border-radius: 50%;
+    width: 3.3rem;
+    height: 3.3rem;
+    box-shadow: 0px 0px 15px gray;
+}
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 1;
+    color: black;
+    background: white;
+    transition: 1s;
+}
+@keyframes imgs {
+    0% {
+        box-shadow: -40px -40px 40px #8000ff;
+    }
+
+    10% {
+        box-shadow: 40px 0px 40px #8000ff;
+    }
+
+    50% {
+        box-shadow: 0px 40px 40px #8000ff;
+    }
+
+    100% {
+        box-shadow: -40px 0px 40px #8000ff;
+    }
+
+}
+.services-btn {
+    width: 50%;
+    background:
+        /*linear-gradient(#8000ff,#8000ff);*/
+        /*#8000ff*/
+        #30005f;
+    /*background: linear-gradient(rgba(132, 26, 185, 0.226),rgba(11, 11, 151, 0.14));*/
+    color: white;
+    font-weight: 600;
+
+    /*border-radius: 50% 50% 50%;*/
+}
+.services-box {
+    box-shadow: 0px 0px 10px gray;
+    border-radius: 10px;
+    height: 20rem;
+    overflow: hidden;
+    background-color: white;
+    margin: 4%;
+}
+.skills-row h1 {
+    color: #30005f;
+    font-weight: 600;
+}
+.portfolio .row {
+    display: flex;
+    justify-content: center;
+}
+.portfolio .row .col-sm-4 img {
+    width: 100%;
+    border-radius: 5%;
+    margin-top: 2%;
+    height: 500px;
+}
+hr {
+    color: #30005f;
+    background-color: #30005f;
+    padding: 2px;
+}
+.footer {
+    background-color: #000000;
+    color: white;
+    height: 30px;
+    padding: 0;
+}
+h1 {
+    font-weight: 700;
+}
+/*social*/
+#navbar{
+    height:auto ; 
+    /*border-radius: 40rem 40rem 40rem 40rem; */
+    background-color: rgb(255, 255, 255); 
+    width: 100%;
+    box-shadow: 0px 6px 8px 4px rgba(4, 4, 4, 0.428);
+    position: relative;
+    display: flex;
+justify-content: center;
+flex-direction: column;
+} 
+ul li{
+    list-style: none;
+    
+    
+}
+ul li:hover{
+    list-style: none;
+    
+}
+ul li a{
+    /*border-bottom: 5px SOLID black;            */
+    text-decoration: none;
+    color: #30005f;
+    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
+}
+ul li a:hover{
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
+    border-bottom: 3px solid #30005f;
+    transition: 0s;
+}
+    
