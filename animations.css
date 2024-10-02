@@ -1,0 +1,15 @@
+
+@keyframes hero-text {
+    0%{
+        opacity: 0;
+        transform: translateY(2vh);   
+    }
+    95%{
+        opacity: 0.9;
+        transform: translateY(0vh);   
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);   
+    }
+}
