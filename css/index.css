@@ -1,0 +1,238 @@
+body{
+    background-color: #101010;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0%;
+    font-family: gilroy,sans-serif;
+    font-size: 1.1rem;
+    color: #cecbcb;
+}
+
+
+.nav-link, .navbar-brand{
+    color: #999999;
+    font-weight: 500;
+    
+    
+}
+.nav-link-active{
+    background: #548ceb;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-weight:600;
+}
+.navbar-brand:hover{
+    background: #548ceb;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    
+}
+
+.nav-link:hover{
+    color: #548ceb;}
+.hero {
+    height: 60vh;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 80%;
+    
+}
+
+.hero h3{
+    transform:translateY(0vh);
+    opacity: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    overflow-wrap: break-word; /* Use this instead of text-wrap */
+    word-wrap: break-word;     /* This is an older alias of overflow-wrap */
+    white-space: normal;
+    animation-name: hero-text;
+    animation-duration: 1.5s;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards; /* Keep the final state after the animation */
+}
+
+h1 {
+    opacity: 0;
+    transform:translateY(0vh);
+    text-align: center;
+    background: linear-gradient(to right, #fed1f1 0%, #548ceb 51%, #004582 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 5rem;
+    font-weight: 700;
+    overflow-wrap: break-word; /* Use this instead of text-wrap */
+    word-wrap: break-word;     /* This is an older alias of overflow-wrap */
+    white-space: normal;
+    animation-name: hero-text;
+    animation-duration: 1.5s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards; 
+}
+
+.hero p{
+    transform:translateY(0vh);
+    opacity: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    overflow-wrap: break-word; /* Use this instead of text-wrap */
+    word-wrap: break-word;     /* This is an older alias of overflow-wrap */
+    white-space: normal;
+    animation-name: hero-text;
+    animation-duration: 1.5s;
+    animation-delay: 1.8s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards; /* Keep the final state after the animation */
+}
+.btn1{
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+   /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
+    box-shadow: 0 0 20px #eeeeee5a;
+    border-radius: 50px;
+    background-image: linear-gradient(to right, #fed1f1 0%, #548ceb 51%, #004582 100%);
+    opacity: 0;
+    animation-name: hero-text;
+    animation-duration: 1.5s;
+    animation-delay: 2.1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.btn1:hover {
+    background-position: right center; /* change the direction of the change here */
+  }
+
+.assets_images{
+    width: 100px;
+    z-index: 0;
+    opacity: 0;
+    border-radius: 10px;
+    filter: drop-shadow(0px 20px 15px rgba(251, 245, 245, 0.172));
+}
+
+#img-1{
+    animation-name: hero-text;
+    animation-duration: 1.5s;
+    animation-delay: 2.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+#img-2{
+    animation-name: hero-text;
+    animation-duration: 1.5s;
+    animation-delay: 2.7s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+#img-3{
+    animation-name: hero-text;
+    animation-duration: 1.5s;
+    animation-delay: 2.9s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+#img-4{
+    animation-name: hero-text;
+    animation-duration: 1.5s;
+    animation-delay: 3.1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+#img-5{
+    animation-name: hero-text;
+    animation-duration: 1.5s;
+    animation-delay: 3.3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+#img-6{
+    animation-name: hero-text;
+    animation-duration: 1.5s;
+    animation-delay: 3.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    
+}
+.projects h2{
+    opacity: 0;
+    transform:translateY(0vh);
+    text-align: center;
+    background: linear-gradient(to right, #fed1f1 0%, #548ceb 51%, #004582 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 2.5rem;
+    font-weight: 700;
+    overflow-wrap: break-word; /* Use this instead of text-wrap */
+    word-wrap: break-word;     /* This is an older alias of overflow-wrap */
+    white-space: normal;
+    animation-name: hero-text;
+    animation-duration: 1.5s;
+    animation-delay: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;     
+}
+.projects .row {
+    opacity: 0;
+    
+    background: rgba(255, 255, 255, 0);
+    justify-content:center;
+    animation-name: hero-text;
+    animation-duration: 1.5s;
+    animation-delay: 1.2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;    
+}
+.projects .row .col-sm-5{
+    height: 80vh;
+    border-radius: 20px;
+    margin-top: 5%;
+    overflow: hidden;
+}
+.projects .row .col-sm-5 img{
+    border-radius: 20px;
+}
+.projects-col-sm-5-2 .col-sm-12{
+    height: 60vh;
+}
+.project-btn{
+    animation-name: hero-text;
+    animation-duration: 1.5s;
+    animation-delay: 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;    
+}
+
+h2{   
+ 
+    background: linear-gradient(to right, #fed1f1 0%, #548ceb 51%, #004582 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 2.5rem;
+    font-weight: 700;
+    overflow-wrap: break-word; /* Use this instead of text-wrap */
+    word-wrap: break-word;     /* This is an older alias of overflow-wrap */
+    white-space: normal;
+}
+.container {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 0.6s ease-out;
+}
+.container.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
